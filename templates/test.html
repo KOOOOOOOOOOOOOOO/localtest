@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>
+        test
+    </title>
+</head>
+
+<script>
+    $(document).ready(function(){
+			//$('#table-box').html("")
+			test();
+		})
+
+		function test(){
+			var text_data = $("#test_id").val();
+    		$.ajax({
+				type: 'POST',
+				url: '/listReq',
+				data: { test_id :text_data },
+				success: function (result){
+					alert( "result" + result);
+					$('#a').html(result);
+					console.log(result);
+				},
+				error:function (xtr,status,error){
+					alert(xtr+":"+status+":"+error);
+				}
+			});
+		}
+</script>
+
+<body>
+    <p>Test</p>
+	<input type="text" name="test_id" id="test_id"/>
+	<input type="button" value="데이터요청" onclick="test()"/>
+	<h1 id="a"></h1>
+</body>
+
+</html>

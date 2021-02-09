@@ -1,0 +1,103 @@
+   body{
+     margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    }
+    .head
+    {
+        background-color: #333;
+        color: #FFFFFF
+    }
+    .edit_tr:hover
+    {
+        background: #80C8E5;
+        cursor:pointer;
+    }
+    .editbox
+    {
+        display: none;
+    }
+    .editbox
+    {
+        font-size: 16px;
+        width: 270px;
+        background-color: #ffffcc;
+        border: solid 1px #000;
+        padding: 4px;
+    }
+    td
+    {
+        padding: 10px;
+    }
+    th
+    {
+        font-weight: bold;
+        text-align: left;
+        padding: 4px;
+    }
+    .searchbox{
+      width: 90%;
+      margin: 10px auto;
+    }
+    .header{
+      background: #80C8E5;
+      overflow: hidden;
+      padding: 20px;
+      text-align: center;
+    }
+    .header h1{
+      text-transform: uppercase;
+      color: white;
+      margin: 0;
+      margin-bottom: 8px;
+    }
+    #value{
+      border: none;
+      background: #f2f2f2;
+      padding: 6px;
+      font-size: 18px;
+      width: 80%;
+      border-radius: 6px;
+      color: black;
+    }
+    #value:focus{
+      outline: none;
+    }
+    .container{
+      background: #FFFFF5;
+      padding: 1%;
+    }
+    .text{
+      margin: 3% 0px;
+      display: flex;
+      align-items: center;
+    }
+  * { box-sizing: border-box; }
+body {
+  font: 16px Arial;
+}
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+}
+
+
+
+
+
+
